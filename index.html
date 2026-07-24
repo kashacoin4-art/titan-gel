@@ -3,418 +3,378 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TITAN GEL — جل طبيعي لدعم صحة الرجل وتعزيز الأداء</title>
-<meta name="description" content="TITAN GEL — جل طبيعي 100% بمكونات آمنة لدعم صحة الرجل وتعزيز الأداء. مكونات طبيعية — نتائج ملموسة مع الاستخدام المنتظم.">
-<meta name="keywords" content="Titan Gel, تيتان جل, صحة الرجل, دعم الأداء, جل طبيعي, مكونات طبيعية">
-<meta name="theme-color" content="#0a0a0f">
+<title>TITAN GEL — الجل الطبيعي لدعم صحة الرجل | المنتج الأصلي</title>
+<meta name="description" content="TITAN GEL الأصلي — تركيبة طبيعية 100% من 11 مكوّنًا نباتيًا لدعم صحة الرجل وتعزيز الأداء والثقة. دفع عند الاستلام وتوصيل سري.">
+<meta name="keywords" content="Titan Gel, تيتان جل, صحة الرجل, جل طبيعي, المنتج الأصلي">
+<meta name="theme-color" content="#07070c">
 <link rel="icon" href="assets/img/favicon.ico">
 
-<!-- Fonts & Icons -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css?v=4">
+<link rel="stylesheet" href="assets/css/style.css?v=7">
 
-<meta property="og:title" content="TITAN GEL — جل طبيعي لدعم صحة الرجل">
-<meta property="og:description" content="جل طبيعي 100% — مكونات آمنة ونتائج ملموسة مع الاستخدام المنتظم">
+<meta property="og:title" content="TITAN GEL — الجل الطبيعي لدعم صحة الرجل">
+<meta property="og:description" content="تركيبة طبيعية 100% من 11 مكوّنًا نباتيًا — دفع عند الاستلام وتوصيل سري.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://kashacoin4-art.github.io/titan-gel/assets/img/og-preview.jpg">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1080">
 <meta property="og:url" content="https://kashacoin4-art.github.io/titan-gel/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="TITAN GEL — جل طبيعي لدعم صحة الرجل">
-<meta name="twitter:description" content="جل طبيعي 100% — مكونات آمنة ونتائج ملموسة مع الاستخدام المنتظم">
+<meta name="twitter:title" content="TITAN GEL — الجل الطبيعي لدعم صحة الرجل">
 <meta name="twitter:image" content="https://kashacoin4-art.github.io/titan-gel/assets/img/og-preview.jpg">
-
-<!-- Meta Pixel (ضع معرّف البكسل الخاص بك) -->
-<!--
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', 'YOUR_PIXEL_ID_HERE');
-fbq('track', 'PageView');
-</script>
--->
-
-<!-- Google Analytics (ضع معرّف GA الخاص بك) -->
-<!--
-<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'YOUR_GA_ID');
-</script>
--->
 </head>
 <body>
 
-<!-- شريط علوي مع عرض محدود -->
+<div class="progress-bar" id="progress-bar"></div>
+<div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+
+<!-- ===== Offer bar ===== -->
 <div class="topbar">
   <div class="container topbar-inner">
     <span class="pulse-dot"></span>
-    <span>عرض حصري لفترة محدودة — خصم <strong>40%</strong> + الشحن 50 ج.م والدفع عند الاستلام</span>
-    <span class="topbar-timer" id="topbar-timer">23:59:59</span>
+    <span class="topbar-text">عرض حصري — خصم <strong>40%</strong> + الدفع عند الاستلام</span>
+    <span class="topbar-timer" id="countdown">23:59:59</span>
   </div>
 </div>
 
-<!-- نافبار -->
-<nav class="navbar">
+<!-- ===== Navbar ===== -->
+<nav class="navbar" id="navbar">
   <div class="container nav-inner">
-    <a href="#" class="brand">
-      <span class="brand-mark">T</span>
+    <a href="#top" class="brand">
+      <img src="assets/img/titanlogo.png" alt="TITAN GEL" class="brand-logo" onerror="this.style.display='none'">
       <span class="brand-text">TITAN <em>GEL</em></span>
     </a>
     <ul class="nav-links">
       <li><a href="#how">كيف يعمل</a></li>
-      <li><a href="#results">النتائج</a></li>
       <li><a href="#ingredients">المكونات</a></li>
-      <li><a href="#testimonials">آراء العملاء</a></li>
+      <li><a href="#reviews">آراء العملاء</a></li>
+      <li><a href="#faq">الأسئلة</a></li>
     </ul>
-    <a href="#order" class="btn-cta-sm">اطلب الآن</a>
+    <a href="#order" class="btn btn-sm">اطلب الآن</a>
   </div>
 </nav>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-bg"></div>
-  <div class="container hero-inner">
-    <div class="hero-content">
-      <div class="badge"><i class="fas fa-shield-halved"></i> منتج أصلي 100% — مكونات طبيعية آمنة</div>
-      <h1>
-        <span class="grad">TITAN GEL</span>
-        <br>
-        <span class="hero-sub">الجل الطبيعي لدعم صحة الرجل<br>وتعزيز الأداء والثقة</span>
-      </h1>
-      <p class="hero-desc">
-        تركيبة طبيعية 100% من 11 مكوّنًا نباتيًا لدعم الأداء الذكوري
-        وتعزيز الثقة — بدون مواد كيميائية أو هرمونات صناعية.
-      </p>
-      <div class="hero-stats">
-        <div><strong>11</strong><span>مكوّن طبيعي</span></div>
-        <div><strong>100%</strong><span>مكونات نباتية</span></div>
-        <div><strong>+1000</strong><span>عميل سعيد</span></div>
+<!-- ===== HERO ===== -->
+<header class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="badge reveal"><i class="fas fa-shield-halved"></i> المنتج الأصلي 100% — مكونات طبيعية آمنة</div>
+      <h1 class="reveal d1"><span class="grad">TITAN GEL</span><br>قوة الطبيعة<br>لثقةٍ تدوم</h1>
+      <p class="hero-sub reveal d2">تركيبة طبيعية 100% من <strong>11 مكوّنًا نباتيًا</strong> لدعم صحة الرجل وتعزيز الأداء والثقة — بدون مواد كيميائية أو هرمونات صناعية.</p>
+      <div class="hero-cta reveal d3">
+        <a href="#order" class="btn btn-lg btn-glow"><i class="fas fa-bolt"></i> اطلب الآن — وفّر 40%</a>
+        <a href="#how" class="btn btn-ghost">كيف يعمل؟</a>
       </div>
-      <div class="hero-cta">
-        <a href="#order" class="btn-cta">
-          <i class="fas fa-fire"></i> اطلب الآن — وفّر 50%
-        </a>
-        <a href="#how" class="btn-ghost">كيف يعمل؟ <i class="fas fa-arrow-left"></i></a>
+      <div class="hero-stats reveal d4">
+        <div><strong class="counter" data-count="11">0</strong><span>مكوّن طبيعي</span></div>
+        <div class="sep"></div>
+        <div><strong><span class="counter" data-count="100">0</span>%</strong><span>مكونات نباتية</span></div>
+        <div class="sep"></div>
+        <div><strong>+<span class="counter" data-count="1000">0</span></strong><span>عميل سعيد</span></div>
       </div>
-      <div class="trust-row">
-        <span><i class="fas fa-truck-fast"></i> الشحن 50 ج.م</span>
+      <div class="trust-row reveal d5">
         <span><i class="fas fa-money-bill-wave"></i> الدفع عند الاستلام</span>
+        <span><i class="fas fa-box"></i> توصيل سري</span>
         <span><i class="fas fa-leaf"></i> طبيعي 100%</span>
-        <span><i class="fas fa-lock"></i> توصيل سري</span>
       </div>
     </div>
-    <div class="hero-product">
+    <div class="hero-visual reveal d2">
+      <div class="orbit-ring r1"></div>
+      <div class="orbit-ring r2"></div>
       <div class="halo"></div>
-      <img src="assets/img/titan-home.png" alt="TITAN Gel" loading="eager">
-      <div class="floating-tag tag1"><i class="fas fa-check-circle"></i> طبيعي 100%</div>
-      <div class="floating-tag tag2"><i class="fas fa-bolt"></i> سهل الاستخدام</div>
-      <div class="floating-tag tag3"><i class="fas fa-heart"></i> مكونات آمنة</div>
+      <img src="assets/img/titan-home.png" alt="عبوة TITAN GEL الأصلية" class="product-img" loading="eager">
+      <div class="float-tag t1"><i class="fas fa-check-circle"></i> طبيعي 100%</div>
+      <div class="float-tag t2"><i class="fas fa-droplet"></i> امتصاص سريع</div>
+      <div class="float-tag t3"><i class="fas fa-lock"></i> شحنة سرية</div>
     </div>
   </div>
+  <div class="hero-fade"></div>
 </header>
 
-<!-- شريط مزايا -->
-<section class="features-bar">
-  <div class="container fb-grid">
-    <div><i class="fas fa-bolt"></i><div><strong>نتيجة فورية</strong><span>من أول استخدام</span></div></div>
-    <div><i class="fas fa-leaf"></i><div><strong>مكونات طبيعية</strong><span>بدون كيماويات</span></div></div>
-    <div><i class="fas fa-user-shield"></i><div><strong>آمن تماماً</strong><span>مكونات طبيعية فقط</span></div></div>
-    <div><i class="fas fa-truck-fast"></i><div><strong>الشحن 50 ج.م</strong><span>لجميع المحافظات</span></div></div>
+<!-- ===== Marquee strip ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>منتج أصلي</span><i>✦</i><span>مكونات طبيعية</span><i>✦</i><span>دفع عند الاستلام</span><i>✦</i><span>توصيل سري وسريع</span><i>✦</i><span>دعم واتساب مباشر</span><i>✦</i>
+    <span>منتج أصلي</span><i>✦</i><span>مكونات طبيعية</span><i>✦</i><span>دفع عند الاستلام</span><i>✦</i><span>توصيل سري وسريع</span><i>✦</i><span>دعم واتساب مباشر</span><i>✦</i>
   </div>
-</section>
+</div>
 
-<!-- HOW IT WORKS -->
-<section id="how" class="section">
+<!-- ===== How it works ===== -->
+<section class="section" id="how">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">كيف يعمل</span>
-      <h2>كيف يعمل <span class="grad">TITAN GEL</span>؟</h2>
-      <p>تركيبة فريدة من المكونات الطبيعية تعمل بـ 3 مراحل لدعم أدائك بشكل طبيعي.</p>
+      <h2>ثلاث مراحل <span class="grad">طبيعية</span> متكاملة</h2>
+      <p>تركيبة فريدة من المكونات الطبيعية تعمل بالتدريج لدعم أدائك بشكل طبيعي.</p>
     </div>
-    <div class="steps-grid">
-      <div class="step">
-        <div class="step-num">01</div>
-        <i class="fas fa-droplet step-icon"></i>
+    <div class="steps">
+      <article class="step glass reveal">
+        <span class="step-num">01</span>
+        <div class="step-icon"><i class="fas fa-droplet"></i></div>
         <h3>الامتصاص السريع</h3>
         <p>تتغلغل المكونات الطبيعية الفعّالة بسرعة عبر الجلد خلال دقائق من التطبيق.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <i class="fas fa-heart-pulse step-icon"></i>
+      </article>
+      <article class="step glass reveal d1">
+        <span class="step-num">02</span>
+        <div class="step-icon"><i class="fas fa-heart-pulse"></i></div>
         <h3>تنشيط الدورة الدموية</h3>
         <p>المكونات النباتية تساعد على تنشيط الدورة الدموية الموضعية بشكل طبيعي.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <i class="fas fa-arrows-up-down-left-right step-icon"></i>
+      </article>
+      <article class="step glass reveal d2">
+        <span class="step-num">03</span>
+        <div class="step-icon"><i class="fas fa-arrow-trend-up"></i></div>
         <h3>نتائج تراكمية</h3>
         <p>مع الاستخدام المنتظم، تتحسن النتائج تدريجيًا بفضل التركيبة الطبيعية المتكاملة.</p>
-      </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- RESULTS -->
-<section id="results" class="section section-dark">
+<!-- ===== Ingredients ===== -->
+<section class="section section-alt" id="ingredients">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">ماذا يقول المستخدمون</span>
-      <h2>تجربة الاستخدام مع <span class="grad">TITAN GEL</span></h2>
-    </div>
-    <div class="results-grid">
-      <div class="result-card">
-        <div class="result-week">الأسبوع الأول</div>
-        <div class="result-row">
-          <div class="result-lbl"><i class="fas fa-battery-half"></i> تحسّن الأداء</div>
-          <div class="result-val">تحسّن <span>ملحوظ</span></div>
-        </div>
-        <div class="result-row">
-          <div class="result-lbl"><i class="fas fa-smile"></i> الثقة بالنفس</div>
-          <div class="result-val">زيادة <span>واضحة</span></div>
-        </div>
-      </div>
-      <div class="result-card highlight">
-        <div class="result-badge">الأكثر طلباً</div>
-        <div class="result-week">بعد الاستخدام المنتظم</div>
-        <div class="result-row">
-          <div class="result-lbl"><i class="fas fa-battery-full"></i> الأداء العام</div>
-          <div class="result-val">تحسّن <span>كبير</span></div>
-        </div>
-        <div class="result-row">
-          <div class="result-lbl"><i class="fas fa-heart"></i> رضا المستخدمين</div>
-          <div class="result-val">نسبة <span>عالية</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- INGREDIENTS -->
-<section id="ingredients" class="section">
-  <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">المكونات</span>
-      <h2>الحل الآمن والفعّال من <span class="grad">المكونات الطبيعية</span></h2>
-      <p>11 مكوناً طبيعياً 100% — بدون مواد كيميائية أو هرمونات.</p>
+      <h2>11 مكوّنًا طبيعيًا <span class="grad">100%</span></h2>
+      <p>بدون مواد كيميائية أو هرمونات — قوة الطبيعة في تركيبة واحدة.</p>
     </div>
     <div class="ing-grid">
-              <div class="ing">
-          <img src="assets/img/Honey.png" alt="عسل النحل" loading="lazy">
-          <span>عسل النحل</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Comfrey-Extract.png" alt="مستخلص السمفوط" loading="lazy">
-          <span>مستخلص السمفوط</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Aloe-Vera-Extract.png" alt="الصبار" loading="lazy">
-          <span>الصبار</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Chamomile-Extract.png" alt="البابونج" loading="lazy">
-          <span>البابونج</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Tea-Tree-Oil.png" alt="زيت شجرة الشاي" loading="lazy">
-          <span>زيت شجرة الشاي</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Avocado-Oil.png" alt="زيت الأفوكادو" loading="lazy">
-          <span>زيت الأفوكادو</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Sweet-Almond-Oi.png" alt="زيت اللوز الحلو" loading="lazy">
-          <span>زيت اللوز الحلو</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Beeswax.png" alt="شمع العسل" loading="lazy">
-          <span>شمع العسل</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Olive-Oil.png" alt="زيت الزيتون" loading="lazy">
-          <span>زيت الزيتون</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Jojoba-Oi.png" alt="زيت الجوجوبا" loading="lazy">
-          <span>زيت الجوجوبا</span>
-        </div>
-        <div class="ing">
-          <img src="assets/img/Coconut-Oil.png" alt="زيت جوز الهند" loading="lazy">
-          <span>زيت جوز الهند</span>
-        </div>
+      <div class="ing glass reveal"><img src="assets/img/Honey.png" alt="عسل النحل" loading="lazy"><span>عسل النحل</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Comfrey-Extract.png" alt="مستخلص السمفوط" loading="lazy"><span>مستخلص السمفوط</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Aloe-Vera-Extract.png" alt="الصبار" loading="lazy"><span>الصبار</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Chamomile-Extract.png" alt="البابونج" loading="lazy"><span>البابونج</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Tea-Tree-Oil.png" alt="زيت شجرة الشاي" loading="lazy"><span>زيت شجرة الشاي</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Avocado-Oil.png" alt="زيت الأفوكادو" loading="lazy"><span>زيت الأفوكادو</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Sweet-Almond-Oi.png" alt="زيت اللوز الحلو" loading="lazy"><span>زيت اللوز الحلو</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Beeswax.png" alt="شمع العسل" loading="lazy"><span>شمع العسل</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Olive-Oil.png" alt="زيت الزيتون" loading="lazy"><span>زيت الزيتون</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Jojoba-Oi.png" alt="زيت الجوجوبا" loading="lazy"><span>زيت الجوجوبا</span></div>
+      <div class="ing glass reveal"><img src="assets/img/Coconut-Oil.png" alt="زيت جوز الهند" loading="lazy"><span>زيت جوز الهند</span></div>
     </div>
   </div>
 </section>
 
-<!-- WHY US -->
-<section class="section section-grad">
-  <div class="container">
-    <div class="section-head">
-      <h2>لماذا يعتبر <span class="grad">TITAN Gel</span> الحل الأفضل؟</h2>
+<!-- ===== Experience ===== -->
+<section class="section" id="results">
+  <div class="container exp-grid">
+    <div class="exp-copy reveal">
+      <span class="eyebrow">تجربة الاستخدام</span>
+      <h2>رحلتك مع <span class="grad">TITAN GEL</span></h2>
+      <ul class="exp-list">
+        <li><i class="fas fa-circle-check"></i><div><strong>الأسبوع الأول</strong><p>تحسّن ملحوظ في الأداء وزيادة واضحة في الثقة بالنفس.</p></div></li>
+        <li><i class="fas fa-circle-check"></i><div><strong>مع الاستخدام المنتظم</strong><p>تحسّن كبير في الأداء العام ونسبة رضا عالية بين المستخدمين.</p></div></li>
+        <li><i class="fas fa-circle-check"></i><div><strong>سهولة الاستخدام</strong><p>جل موضعي سهل التطبيق يوميًا — يمتص سريعًا دون أي تعقيد.</p></div></li>
+      </ul>
+      <a href="#order" class="btn btn-glow"><i class="fas fa-fire"></i> ابدأ رحلتك الآن</a>
     </div>
-    <div class="why-grid">
-      <div class="why"><i class="fas fa-clock"></i><h4>دعم الأداء</h4><p>يساعد على تعزيز الأداء الذكوري بشكل طبيعي مع الاستخدام المنتظم.</p></div>
-      <div class="why"><i class="fas fa-bolt"></i><h4>سهل الاستخدام</h4><p>تطبيق موضعي سريع وبسيط — لا حبوب ولا إجراءات معقدة.</p></div>
-      <div class="why"><i class="fas fa-leaf"></i><h4>طبيعي بالكامل</h4><p>11 مكونًا نباتيًا بدون مواد كيميائية أو هرمونات صناعية.</p></div>
-      <div class="why"><i class="fas fa-heart-pulse"></i><h4>مكونات آمنة</h4><p>مكونات طبيعية معروفة — يُنصح باستشارة الطبيب عند وجود حالة صحية.</p></div>
+    <div class="exp-visual reveal d1">
+      <img src="assets/img/product.jpg" alt="TITAN GEL" loading="lazy">
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="section section-dark">
+<!-- ===== Reviews ===== -->
+<section class="section section-alt" id="reviews">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">آراء العملاء</span>
-      <h2>ماذا قال عملاؤنا عن <span class="grad">TITAN Gel</span>؟</h2>
+      <h2>ماذا قال <span class="grad">عملاؤنا</span>؟</h2>
     </div>
-    <div class="test-grid">
-      <div class="test"><div class="stars">★★★★★</div><p>"استخدمته لمدة شهر والنتيجة كانت ملحوظة. المكونات الطبيعية فعلاً بتفرق."</p><div class="test-author"><strong>أحمد م.</strong><span>القاهرة</span></div></div>
-      <div class="test"><div class="stars">★★★★☆</div><p>"منتج كويس ومحتاج صبر. بعد أسبوعين بدأت ألاحظ فرق واضح."</p><div class="test-author"><strong>محمد ع.</strong><span>الإسكندرية</span></div></div>
-      <div class="test"><div class="stars">★★★★★</div><p>"الجل سهل الاستخدام وريحته مقبولة. استخدمته 3 أسابيع وفعلاً في تحسّن."</p><div class="test-author"><strong>خالد ح.</strong><span>المنصورة</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ORDER FORM -->
-<section id="order" class="section section-order">
-  <div class="container order-grid">
-    <div class="order-info">
-      <div class="price-box">
-        <div class="price-old">السعر الأصلي: <s>700 ج.م</s></div>
-        <div class="price-new">350 <small>ج.م</small></div>
-        <div class="price-save"><i class="fas fa-tag"></i> توفير 40% — لفترة محدودة</div>
-        <div class="price-features">
-          <div><i class="fas fa-check"></i> الشحن 50 ج.م</div>
-          <div><i class="fas fa-check"></i> الدفع عند الاستلام</div>
-          <div><i class="fas fa-check"></i> ضمان استرجاع المال</div>
-          <div><i class="fas fa-check"></i> توصيل في غلاف سري</div>
-        </div>
-        <div class="countdown" id="countdown">
-          <div><span id="cd-h">00</span><small>ساعة</small></div>
-          <div><span id="cd-m">00</span><small>دقيقة</small></div>
-          <div><span id="cd-s">00</span><small>ثانية</small></div>
-        </div>
-      </div>
-    </div>
-
-    <form id="order-form" class="order-form" name="orders" data-netlify="true" netlify-honeypot="bot-field" novalidate>
-      <input type="hidden" name="form-name" value="orders">
-      <p style="display:none"><input name="bot-field"></p>
-      <h3>اطلب الآن — استلم خلال 24-72 ساعة</h3>
-      <p class="form-sub">سجّل بياناتك وسنتواصل معك فوراً لتأكيد الطلب.</p>
-
-      <div class="field">
-        <label><i class="fas fa-user"></i> الاسم الكامل</label>
-        <input type="text" name="name" required minlength="2" placeholder="مثال: أحمد محمد">
-      </div>
-      <div class="field">
-        <label><i class="fas fa-phone"></i> رقم الهاتف</label>
-        <input type="tel" name="phone" required pattern="01[0125][0-9]{8}" maxlength="11" inputmode="numeric" placeholder="مثال: 01012345678">
-      </div>
-      <div class="row2">
-        <div class="field">
-          <label><i class="fas fa-city"></i> المحافظة</label>
-          <input type="text" name="city" required placeholder="مثال: القاهرة">
-        </div>
-        <div class="field">
-          <label><i class="fas fa-cubes-stacked"></i> الكمية</label>
-          <select name="qty" required>
-            <option value="1">قطعة واحدة — 350 ج.م + 50 شحن</option>
-            <option value="2" selected>قطعتان — 650 ج.م + 50 شحن (وفّر 100)</option>
-            <option value="3">3 قطع — 900 ج.م + 50 شحن (وفّر 200)</option>
-          </select>
-        </div>
-      </div>
-      <div class="field">
-        <label><i class="fas fa-location-dot"></i> العنوان بالتفصيل</label>
-        <input type="text" name="address" required placeholder="الحي، الشارع، رقم المبنى">
-      </div>
-      <div class="field">
-        <label><i class="fas fa-pen"></i> ملاحظات (اختياري)</label>
-        <textarea name="notes" rows="2" placeholder="أي ملاحظات إضافية..."></textarea>
-      </div>
-
-      <div class="order-total-live">
-        <i class="fas fa-receipt"></i> الإجمالي شامل الشحن: <strong id="live-total">700 ج.م</strong>
-      </div>
-
-      <button type="submit" class="btn-submit">
-        <span class="btn-txt"><i class="fab fa-whatsapp"></i> تأكيد الطلب عبر واتساب</span>
-        <span class="btn-loader"><i class="fas fa-spinner fa-spin"></i> جاري الإرسال...</span>
-      </button>
-      <div class="form-msg" id="form-msg"></div>
-      <div class="form-trust"><i class="fas fa-lock"></i> بياناتك آمنة — يتم إرسال الطلب مباشرة عبر واتساب</div>
-      <div class="form-trust" style="margin-top:4px;font-size:12px;opacity:0.6"><i class="fas fa-shield-halved"></i> سيتم فتح واتساب لتأكيد طلبك مع البائع مباشرة</div>
-    </form>
-  </div>
-</section>
-
-<!-- سياسة الخصوصية -->
-<section id="privacy" class="section section-dark">
-  <div class="container" style="max-width:800px">
-    <div class="section-head">
-      <h2><i class="fas fa-shield-halved" style="color:var(--gold)"></i> سياسة الخصوصية</h2>
-    </div>
-    <div style="color:var(--text-dim);font-size:15px;line-height:2">
-      <p>نلتزم بحماية خصوصية بياناتك الشخصية. البيانات التي تُدخلها (الاسم، الهاتف، العنوان) تُستخدم فقط لإتمام طلبك والتواصل معك لتأكيده. لا نشارك بياناتك مع أي طرف ثالث. يمكنك التواصل معنا عبر واتساب لأي استفسار حول بياناتك أو لطلب حذفها.</p>
-      <p style="margin-top:12px"><strong style="color:var(--gold)">تنبيه:</strong> هذا المنتج مكمّل طبيعي وليس دواءً طبيًا. النتائج تختلف من شخص لآخر. يُنصح باستشارة الطبيب المختص قبل الاستخدام.</p>
+    <div class="reviews">
+      <figure class="review glass reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>"استخدمته لمدة شهر والنتيجة كانت ملحوظة. المكونات الطبيعية فعلاً بتفرق."</blockquote>
+        <figcaption><span class="avatar">أ</span><div><strong>أحمد م.</strong><small>القاهرة</small></div></figcaption>
+      </figure>
+      <figure class="review glass reveal d1">
+        <div class="stars">★★★★☆</div>
+        <blockquote>"منتج كويس ومحتاج صبر. بعد أسبوعين بدأت ألاحظ فرق واضح."</blockquote>
+        <figcaption><span class="avatar">م</span><div><strong>محمد ع.</strong><small>الإسكندرية</small></div></figcaption>
+      </figure>
+      <figure class="review glass reveal d2">
+        <div class="stars">★★★★★</div>
+        <blockquote>"الجل سهل الاستخدام وريحته مقبولة. استخدمته 3 أسابيع وفعلاً في تحسّن."</blockquote>
+        <figcaption><span class="avatar">خ</span><div><strong>خالد ح.</strong><small>المنصورة</small></div></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
+<!-- ===== Pricing + Order ===== -->
+<section class="section" id="order">
   <div class="container">
-    <div class="footer-grid">
-      <div>
-        <a href="#" class="brand">
-          <span class="brand-mark">T</span>
-          <span class="brand-text">TITAN <em>GEL</em></span>
-        </a>
-        <p>جل طبيعي 100% بمكونات نباتية لدعم صحة الرجل.</p>
-      </div>
-      <div>
-        <h5>روابط</h5>
-        <ul>
-          <li><a href="#how">كيف يعمل</a></li>
-          <li><a href="#ingredients">المكونات</a></li>
-          <li><a href="#order">اطلب الآن</a></li>
-          <li><a href="#privacy">سياسة الخصوصية</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>تواصل معنا</h5>
-        <ul>
-          <li><a href="https://wa.me/201213833029" target="_blank" rel="noopener"><i class="fab fa-whatsapp" style="color:#25D366"></i> واتساب: 01213833029</a></li>
-          <li><a href="tel:+201213833029"><i class="fas fa-phone"></i> اتصل: 01213833029</a></li>
-        </ul>
-      </div>
+    <div class="section-head reveal">
+      <span class="eyebrow">اطلب الآن</span>
+      <h2>اختر باقتك — <span class="grad">الدفع عند الاستلام</span></h2>
+      <p>الشحن 50 ج.م لجميع المحافظات — توصيل سري خلال 2-4 أيام عمل.</p>
     </div>
-    <div class="footer-bottom">© 2026 TITAN GEL — جميع الحقوق محفوظة</div>
+
+    <div class="plans">
+      <button class="plan glass reveal" data-qty="1" type="button">
+        <span class="plan-name">باقة التجربة</span>
+        <span class="plan-qty">قطعة واحدة</span>
+        <span class="plan-price">350 <small>ج.م</small></span>
+        <span class="plan-note">+ 50 شحن</span>
+      </button>
+      <button class="plan glass featured reveal d1" data-qty="2" type="button">
+        <span class="ribbon">الأكثر طلبًا</span>
+        <span class="plan-name">الباقة الذهبية</span>
+        <span class="plan-qty">قطعتان</span>
+        <span class="plan-price">650 <small>ج.م</small></span>
+        <span class="plan-note">وفّر 100 ج.م + 50 شحن</span>
+      </button>
+      <button class="plan glass reveal d2" data-qty="3" type="button">
+        <span class="plan-name">باقة التوفير</span>
+        <span class="plan-qty">3 قطع</span>
+        <span class="plan-price">900 <small>ج.م</small></span>
+        <span class="plan-note">وفّر 150 ج.م + 50 شحن</span>
+      </button>
+    </div>
+
+    <div class="order-wrap glass reveal">
+      <div class="order-side">
+        <img src="assets/img/titan-home.png" alt="TITAN GEL">
+        <ul>
+          <li><i class="fas fa-truck-fast"></i> شحن سريع 2-4 أيام</li>
+          <li><i class="fas fa-money-bill-wave"></i> الدفع عند الاستلام</li>
+          <li><i class="fas fa-box"></i> تغليف سري محايد</li>
+          <li><i class="fab fa-whatsapp"></i> تأكيد فوري عبر واتساب</li>
+        </ul>
+      </div>
+      <form id="order-form" class="order-form" autocomplete="on" novalidate>
+        <h3>املأ بياناتك وسنتواصل معك فورًا</h3>
+        <div class="field">
+          <label for="f-name"><i class="fas fa-user"></i> الاسم بالكامل</label>
+          <input type="text" id="f-name" name="name" placeholder="مثال: أحمد محمد" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-phone"><i class="fas fa-phone"></i> رقم الهاتف</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="01xxxxxxxxx" required>
+          </div>
+          <div class="field">
+            <label for="f-qty"><i class="fas fa-boxes-stacked"></i> الكمية</label>
+            <select id="f-qty" name="qty">
+              <option value="1">قطعة واحدة — 350 ج.م</option>
+              <option value="2" selected>قطعتان — 650 ج.م (وفّر 100)</option>
+              <option value="3">3 قطع — 900 ج.م (وفّر 150)</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-city"><i class="fas fa-city"></i> المحافظة</label>
+            <input type="text" id="f-city" name="city" placeholder="مثال: القاهرة" required>
+          </div>
+          <div class="field">
+            <label for="f-address"><i class="fas fa-location-dot"></i> العنوان بالتفصيل</label>
+            <input type="text" id="f-address" name="address" placeholder="الحي، الشارع، رقم المبنى" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-notes"><i class="fas fa-pen"></i> ملاحظات (اختياري)</label>
+          <textarea id="f-notes" name="notes" rows="2" placeholder="أي ملاحظات إضافية..."></textarea>
+        </div>
+        <div class="total-box">
+          <span>الإجمالي شامل الشحن</span>
+          <strong id="total">700 ج.م</strong>
+        </div>
+        <button type="submit" class="btn btn-lg btn-glow btn-submit">
+          <span class="btn-txt"><i class="fab fa-whatsapp"></i> تأكيد الطلب عبر واتساب</span>
+          <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i> جارٍ الإرسال...</span>
+        </button>
+        <p class="form-msg" id="form-msg"></p>
+        <p class="form-hint"><i class="fas fa-lock"></i> بياناتك آمنة وتُستخدم فقط لإتمام طلبك.</p>
+      </form>
+    </div>
   </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section-alt" id="faq">
+  <div class="container narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow">الأسئلة الشائعة</span>
+      <h2>عندك <span class="grad">سؤال</span>؟</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq glass reveal">
+        <summary>هل المنتج أصلي؟ <i class="fas fa-chevron-down"></i></summary>
+        <p>نعم — نوفر منتج TITAN GEL الأصلي بعبوته المميزة، ويمكنك فحص العبوة عند الاستلام قبل الدفع.</p>
+      </details>
+      <details class="faq glass reveal">
+        <summary>كيف أستخدم المنتج؟ <i class="fas fa-chevron-down"></i></summary>
+        <p>يوضع الجل موضعيًا مرة يوميًا مع تدليك خفيف حتى الامتصاص. التفاصيل الكاملة مرفقة داخل العبوة.</p>
+      </details>
+      <details class="faq glass reveal">
+        <summary>متى تظهر النتائج؟ <i class="fas fa-chevron-down"></i></summary>
+        <p>النتائج تختلف من شخص لآخر — أغلب المستخدمين لاحظوا تحسّنًا مع الاستخدام المنتظم خلال الأسابيع الأولى.</p>
+      </details>
+      <details class="faq glass reveal">
+        <summary>هل التوصيل سري فعلًا؟ <i class="fas fa-chevron-down"></i></summary>
+        <p>نعم — الشحنة تصل في تغليف محايد تمامًا بدون أي بيانات عن محتواها، وتُسلّم لك شخصيًا.</p>
+      </details>
+      <details class="faq glass reveal">
+        <summary>كيف أدفع؟ <i class="fas fa-chevron-down"></i></summary>
+        <p>الدفع كاش عند الاستلام بعد فحص الشحنة — بدون أي دفع مقدم.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="brand-text">TITAN <em>GEL</em></span></div>
+      <p>جل طبيعي 100% بمكونات نباتية لدعم صحة الرجل.</p>
+    </div>
+    <div>
+      <h4>روابط</h4>
+      <ul>
+        <li><a href="#how">كيف يعمل</a></li>
+        <li><a href="#ingredients">المكونات</a></li>
+        <li><a href="#order">اطلب الآن</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>تواصل معنا</h4>
+      <ul>
+        <li><a href="https://wa.me/971555659304" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب: ‎+971 55 565 9304</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container disclaimer">
+    <p><strong>تنبيه:</strong> هذا المنتج مكمّل طبيعي وليس دواءً طبيًا. النتائج تختلف من شخص لآخر. يُنصح باستشارة الطبيب المختص قبل الاستخدام.</p>
+    <p><strong>الخصوصية:</strong> بياناتك (الاسم، الهاتف، العنوان) تُستخدم فقط لإتمام طلبك ولا نشاركها مع أي طرف ثالث.</p>
+  </div>
+  <div class="container copyright">© TITAN GEL 2026 — جميع الحقوق محفوظة</div>
 </footer>
 
-<!-- زر واتساب عائم -->
-<a href="https://wa.me/201213833029?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20TITAN%20GEL" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/971555659304?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20TITAN%20GEL" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- شريط الطلب الثابت للجوال -->
-<a href="#order" class="mobile-cta">
-  <i class="fas fa-fire"></i> اطلب الآن — خصم 40%
-</a>
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta" id="sticky-cta">
+  <div><strong id="sticky-total">700 ج.م</strong><span>شامل الشحن</span></div>
+  <a href="#order" class="btn btn-glow">اطلب الآن</a>
+</div>
 
-<script src="assets/js/main.js?v=4"></script>
+<!-- Success modal -->
+<div class="modal" id="success-modal" role="dialog" aria-modal="true">
+  <div class="modal-card glass">
+    <div class="modal-check"><i class="fas fa-check"></i></div>
+    <h3>تم استلام طلبك بنجاح!</h3>
+    <p id="modal-order-id"></p>
+    <p>سيتم تحويلك لواتساب لتأكيد الطلب — لو لم يُفتح تلقائيًا اضغط الزر:</p>
+    <a href="#" id="modal-wa" class="btn btn-glow" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> فتح واتساب</a>
+    <button class="modal-close" id="modal-close" type="button">إغلاق</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js?v=7" defer></script>
 </body>
 </html>
