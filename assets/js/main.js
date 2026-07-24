@@ -7,8 +7,8 @@
   var WHATSAPP = '971555659304';            // +971 55 565 9304
   var BOT_TOKEN = '8747279612:AAEh091B1EgM8Z0OesJ_-7C8HcvhjIdO-3o';
   var CHAT_ID = '595601835';
-  var SHIPPING = 50;
-  var PRICES = { 1: 350, 2: 650, 3: 900 };
+  var SHIP_FROM = 50;   // الشحن يبدأ من 50 ج.م — يُؤكد عند التواصل
+  var PRICES = { 1: 350, 2: 700, 3: 1050 };
   var QTY_LABEL = { 1: 'قطعة واحدة', 2: 'قطعتان', 3: '3 قطع' };
 
   /* ---------- scroll progress + navbar ---------- */
@@ -77,7 +77,7 @@
 
   /* ---------- live total ---------- */
   function currentQty() { return parseInt(qtySelect ? qtySelect.value : '2', 10) || 2; }
-  function currentTotal() { return PRICES[currentQty()] + SHIPPING; }
+  function currentTotal() { return PRICES[currentQty()]; }
   function updateTotal() {
     var t = currentTotal() + ' ج.م';
     var el1 = document.getElementById('total');
@@ -85,9 +85,9 @@
     if (el1) el1.textContent = t;
     if (el2) el2.textContent = t;
     var det = document.getElementById('total-detail');
-    if (det) det.textContent = PRICES[currentQty()] + ' + ' + SHIPPING + ' شحن';
+    if (det) det.textContent = '+ الشحن يبدأ من ' + SHIP_FROM + ' ج.م ويُؤكد معك واتساب';
   }
-  selectPlan(2, false);
+  selectPlan(1, false);
 
   /* ---------- hero parallax ---------- */
   var stage = document.getElementById('product-stage');
@@ -152,9 +152,9 @@
       + '🏛️ المحافظة: ' + city + '\n'
       + '📍 العنوان: ' + address + '\n'
       + '📦 الكمية: ' + QTY_LABEL[qty] + '\n'
-      + '💵 سعر المنتج: ' + subtotal + ' ج.م\n'
-      + '🚚 الشحن: ' + SHIPPING + ' ج.م\n'
-      + '💰 الإجمالي: ' + total + ' ج.م\n'
+      + '💵 إجمالي المنتج: ' + total + ' ج.م (بعد خصم 40%)\n'
+      + '🚚 الشحن: يبدأ من ' + SHIP_FROM + ' ج.م — يُؤكد مع خدمة العملاء\n'
+      + '⏱️ التوصيل خلال 1-3 أيام\n'
       + (notes ? '📝 ملاحظات: ' + notes + '\n' : '')
       + '💳 الدفع عند الاستلام';
     var waUrl = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(waMsg);
@@ -188,7 +188,7 @@
       modalWa.href = waUrl;
       modal.classList.add('open');
       form.reset();
-      selectPlan(2, false);
+      selectPlan(1, false);
       var w = window.open(waUrl, '_blank');
       if (!w) { /* popup blocked — modal button covers it */ }
     }, 600);
