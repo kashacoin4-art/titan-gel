@@ -48,13 +48,16 @@
   document.querySelectorAll('.counter').forEach(function (el) { cio.observe(el); });
 
   /* ---------- countdown (resets daily) ---------- */
-  var cd = document.getElementById('countdown');
+  var cd = document.getElementById('countdown-mini');
+  var dh=document.getElementById('dt-h'), dm=document.getElementById('dt-m'), ds=document.getElementById('dt-s');
   function pad(n) { return String(n).padStart(2, '0'); }
   function tickCd() {
     var now = new Date();
     var end = new Date(now); end.setHours(23, 59, 59, 999);
     var s = Math.max(0, Math.floor((end - now) / 1000));
-    if (cd) cd.textContent = pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s % 3600 / 60)) + ':' + pad(s % 60);
+    var H=pad(Math.floor(s/3600)), M=pad(Math.floor(s%3600/60)), S=pad(s%60);
+    if (cd) cd.textContent = H + ':' + M + ':' + S;
+    if (dh) { dh.textContent = H; dm.textContent = M; ds.textContent = S; }
   }
   tickCd(); setInterval(tickCd, 1000);
 
@@ -81,8 +84,20 @@
     var el2 = document.getElementById('sticky-total');
     if (el1) el1.textContent = t;
     if (el2) el2.textContent = t;
+    var det = document.getElementById('total-detail');
+    if (det) det.textContent = PRICES[currentQty()] + ' + ' + SHIPPING + ' شحن';
   }
   selectPlan(2, false);
+
+  /* ---------- hero parallax ---------- */
+  var stage = document.getElementById('product-stage');
+  if (stage && window.matchMedia('(pointer:fine)').matches) {
+    document.addEventListener('mousemove', function (e) {
+      var x = (e.clientX / window.innerWidth - .5) * 14;
+      var y = (e.clientY / window.innerHeight - .5) * 10;
+      stage.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+    }, { passive: true });
+  }
 
   /* ---------- order form ---------- */
   var form = document.getElementById('order-form');
