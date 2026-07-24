@@ -37,22 +37,21 @@ h1,h2,h3,h4{font-family:'Cairo',sans-serif;line-height:1.35}
 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 
 /* ---------- background fx ---------- */
-.bg-fx{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
-.bg-fx .glow{position:absolute;border-radius:50%;filter:blur(120px);opacity:.55}
-.bg-fx .g1{width:56vw;height:56vw;background:radial-gradient(circle,#4b101c,transparent 62%);top:-20vw;right:-16vw;animation:drift 18s ease-in-out infinite alternate}
-.bg-fx .g2{width:46vw;height:46vw;background:radial-gradient(circle,#33260a,transparent 62%);bottom:-16vw;left:-14vw;animation:drift 22s ease-in-out infinite alternate-reverse}
-.bg-fx .g3{width:26vw;height:26vw;background:radial-gradient(circle,#230b11,transparent 62%);top:44%;left:36%;animation:drift 26s ease-in-out infinite alternate}
-@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(5vw,-4vw) scale(1.12)}}
-.bg-fx .stars{position:absolute;inset:0;opacity:.5;
-  background-image:radial-gradient(1.2px 1.2px at 12% 22%,rgba(255,217,122,.6),transparent),
-    radial-gradient(1px 1px at 34% 68%,rgba(255,255,255,.35),transparent),
-    radial-gradient(1.4px 1.4px at 58% 14%,rgba(255,217,122,.5),transparent),
-    radial-gradient(1px 1px at 72% 52%,rgba(255,255,255,.3),transparent),
-    radial-gradient(1.2px 1.2px at 88% 30%,rgba(255,217,122,.55),transparent),
-    radial-gradient(1px 1px at 22% 88%,rgba(255,255,255,.3),transparent),
-    radial-gradient(1.3px 1.3px at 66% 84%,rgba(255,217,122,.45),transparent);
-  animation:twinkle 6s ease-in-out infinite alternate}
-@keyframes twinkle{from{opacity:.3}to{opacity:.65}}
+.bg-fx{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none;
+  background:
+    radial-gradient(120% 90% at 78% -10%,rgba(214,31,58,.14),transparent 55%),
+    radial-gradient(110% 80% at 8% 108%,rgba(246,189,69,.09),transparent 55%),
+    radial-gradient(ellipse 90% 70% at 50% 42%,#101017 0%,#0a0a10 48%,#060609 100%)}
+.bg-fx::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 74% 62% at 50% 46%,transparent 58%,rgba(0,0,0,.55) 100%)}
+.bg-fx::after{content:'';position:absolute;inset:0;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.9'/%3E%3C/svg%3E")}
+.bg-fx .glow{position:absolute;border-radius:50%;filter:blur(130px);opacity:.4}
+.bg-fx .g1{width:50vw;height:50vw;background:radial-gradient(circle,#54121f,transparent 60%);top:-18vw;right:-14vw;animation:drift 24s ease-in-out infinite alternate}
+.bg-fx .g2{width:42vw;height:42vw;background:radial-gradient(circle,#2e2208,transparent 60%);bottom:-14vw;left:-12vw;animation:drift 30s ease-in-out infinite alternate-reverse}
+.bg-fx .g3{display:none}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(4vw,-3vw) scale(1.08)}}
+.bg-fx .stars{display:none}
 
 /* ---------- progress ---------- */
 .progress-bar{position:fixed;top:0;right:0;height:3px;width:0;background:var(--grad);z-index:200}
@@ -127,6 +126,16 @@ h1,h2,h3,h4{font-family:'Cairo',sans-serif;line-height:1.35}
 .float-tag.t1{top:14%;right:2%}
 .float-tag.t2{bottom:20%;left:0;animation-delay:1.6s}
 @keyframes tagFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+
+/* ---------- hero watermark ---------- */
+.hero{overflow:hidden}
+.hero-watermark{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);
+  font-family:'Cairo',sans-serif;font-weight:1000;font-size:clamp(9rem,24vw,22rem);line-height:1;
+  color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.045);letter-spacing:.06em;
+  pointer-events:none;user-select:none;z-index:0;white-space:nowrap}
+.hero-grid{position:relative;z-index:2}
+.pa-label{width:100%;color:var(--muted);font-size:.85rem;font-weight:700;margin-bottom:-6px}
+.price-anchor .pa-note i{color:var(--red2);margin-inline-end:6px}
 
 /* ---------- trust strip ---------- */
 .trust-strip{border-block:1px solid var(--border);background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.015));margin-top:26px}
