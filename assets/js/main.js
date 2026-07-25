@@ -7,6 +7,7 @@
   var WHATSAPP = '971555659304';
   var BOT_TOKEN = '8747279612:AAEh091B1EgM8Z0OesJ_-7C8HcvhjIdO-3o';
   var CHAT_ID = '595601835';
+  var SHEET_URL = 'https://script.google.com/macros/s/AKfycbyo0SuhFu_WcGYcZczdXi5rAjcsGHmzosGrP6ErnzxNSjvcj7hwxh9BUL2JGq1WZosN/exec';
   var SHIP_FROM = 50; // الشحن يبدأ من 50 ج.م — يُؤكد عند التواصل
   var PRICES = { 1: 350, 2: 700, 3: 1050 };
   var OLDP  = { 1: 500, 2: 1000, 3: 1500 };
@@ -106,6 +107,16 @@
       + '⏱️ التوصيل خلال 1-3 أيام\n'
       + '💳 الدفع عند الاستلام';
     var waUrl = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(waMsg);
+
+    /* Google Sheet log (silent) */
+    try {
+      fetch(SHEET_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ id: orderId, name: name, phone: phone, city: city, address: address, qty: QTY_LABEL[qty], total: total })
+      }).catch(function () {});
+    } catch (err) { /* silent */ }
 
     /* Telegram notify (silent) */
     try {
